@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" id="formLog">
+    <h2>CUY UNIVERSITY</h2>
+    <form>
+      <div class="inputBox">
+        <input type="text" required="" id="uLog" value="">
+        <label>USERNAME</label>
+      </div>
+      <div class="inputBox">
+        <input type="password" required="" id="passLog" value="">
+        <label>PASSWORD</label>
+      </div>
+      <div class="tt">
+        <button class="btn" onclick="onLog()">LOGIN</button>
+        <p>No account? <a href="#" class="link" onclick="reg('reg')">Sign Up Here!</a></p>
+      </div>
+    </form>
+  </div>
+  <!-- REG -->
+  <div class="container" id="formReg">
+    <h2>SIGN UP</h2>
+    <form>
+      <div class="inputBox">
+        <input type="text" required="" id="uReg">
+        <label>USERNAME</label>
+      </div>
+      <div class="inputBox">
+        <input type="password" required="" id="passReg">
+        <label>PASSWORD</label>
+      </div>
+      <div class="select">
+        <select id="as">
+          <option selected disabled>Register as</option>
+          <option value="Admin">Admin</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Student">Student</option>
+        </select>
+      </div>
+      <div class="tt">
+        <button class="btn" onclick="daf()">SIGN UP</button>
+        <p>Already have account? <a href="#" onclick="reg('log')" class="link">Login Here!</a></p>
+      </div>
+    </form>
+  </div>
+
+  <!-- BOX -->
+  <div class="box" id="box">
+    <span></span>
+    <div class="txt">
+      <h3>Hi <b id="usName"></b></h3>
+      <h3>You are login as <b id="sbg"></b></h3>
+      <button class="bton" onclick="onOut()">LOGOUT</button>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="login.js" type="application/javascript"></script>
+</body>
+</html>
